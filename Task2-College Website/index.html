@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Karmyogi Engineering College</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #555;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #1f1616;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .navbar a {
+            display: block;
+            color: #eeeeee;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .navbar a:hover {
+            color: #1c87c9;
+        }
+
+        .container {
+            text-align: center;
+            align-content: center;
+            padding: 40px;
+            margin: 30px;
+        }
+
+        .about p {
+            color: blue;
+            line-height: 20px;
+            font-size: 18px;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+        .dept {
+            background-color: cadetblue;
+        }
+
+        .subdept {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+        }
+
+        .sub {
+            width: 250px;
+            height: 400px;
+            padding: 14px;
+            border: 2px solid burlywood;
+            margin: 20px;
+            background-color: lightgreen;
+        }
+
+        .sub p {
+            justify-content: space-around;
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        #faculty {
+            margin-top: 0;
+            background-color: lightsteelblue;
+        }
+
+        .otherFaculty {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 10px;
+        }
+
+        .detail {
+            margin: 10px;
+            padding: 5px;
+            width: 200px;
+            border: 2px solid rgb(221, 89, 89);
+        }
+
+        .detail h3 {
+            color: #1c87c9;
+        }
+
+        h4 {
+            color: red;
+        }
+
+        .research {
+            text-align: left;
+            margin: 30px;
+            padding: 20px;
+            background-color: rgb(238, 171, 146);
+
+        }
+
+        .research h3 {
+            color: #1c87c9;
+
+        }
+
+        .research p,
+        li {
+            padding: 5px;
+            line-height: 18px;
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        .placement p {
+            text-align: center;
+            padding: 10px;
+            font-size: larger;
+            color: blueviolet;
+        }
+
+        .recruiters {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            border: 3px solid burlywood;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        .recruiters img {
+            width: 150px;
+            height: 120px;
+        }
+
+        .contact {
+            background-color: darkgoldenrod;
+            padding: 10px;
+            margin: 30px;
+
+        }
+
+        .map {
+            width: 80%;
+            margin: auto;
+        }
+
+        .map iframe {
+            width: 100%;
+        }
+
+        .contact-us {
+            width: 80%;
+            margin: auto;
+        }
+
+        .row {
+            margin-top: 5%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-col {
+            flex-basis: 48%;
+            margin-bottom: 30px;
+        }
+
+        .contact-col div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .contact-col div .fa {
+            font-size: 28px;
+            color: #f44336;
+            margin: 10px;
+            margin-right: 20px;
+        }
+
+        .contact-col div p {
+            padding: 0;
+        }
+
+        .contact-col div h5 {
+            font-size: 20px;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: 400;
+        }
+
+        .contact-col input,
+        .contact-col textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 17px;
+            outline: none;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+
+        }
+
+        .end {
+            font-style: italic;
+            color: chartreuse;
+            background-color: black;
+            padding: 10px;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <a href="#about">About Us</a>
+            <a href="#dept">Department</a>
+            <a href="#faculty">Faculty</a>
+            <a href="#research">Research</a>
+            <a href="#placement">Placement</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="container about" id="about">
+            <h1>Welcome to Karmayogi Institute of Technology</h1>
+            <p>The trust 'Pandurang Pratishthan' is led by Shri Prashantrao Paricharak, under the the most able
+                guidance of honorable Ex-MLA of Pandharpur Late.Shri Sudhakarpant Paricharak, with only motto
+                "Education For All". <br /><br />
+                Karmayogi Institute of Technology college was established in
+                2008 to provide quality technical education to cater to the needs of the modern
+                India. It has well qualified faculties, a state-of-art library, effective Teaching
+                -Learning process and many other supporting facilities for overall development
+                of the students.<br /><br />
+                The trust has purchased around 100 acres of land for the said purpose at the bank of river Chandrabhaga
+                and completed the college building as well as separate hostel for boys and girls.</p>
+
+        </div>
+        <div id="dept" class="container dept">
+            <h1>Departments</h1>
+            <div class="subdept">
+                <div class="sub auto">
+                    <h2>Automobile Engineering</h2>
+                    <p>Automobile Engineering is one of the most challenging careers now a days.Due to demand & passion
+                        on vehicles automobile engineers has lot many opportunaties in India & in abroad as well.It is
+                        the study of Engineering that deals with designing the vehicle,repairing,servicing
+                        vehicles.</p>
+                </div>
+                <div class="sub Auto">
+                    <h2>Computer Engineering</h2>
+                    <p>The department with society concentrates on achieving the excellence in technical education. The
+                        department is upgraded infrastructure wise to meet the changing technological environment.A well
+                        qualified dedicated faculty looks on personal as well as educational growth of students.The
+                        Department is keen on upgrading technical skills.</p>
+                </div>
+                <div class="sub civil">
+                    <h2>Civil Engineering</h2>
+                    <p>Civil Engineering is a professional engineering discipline that deals with the design,
+                        construction, and maintenance of the physical and naturally built environment, including works
+                        like roads, bridges, canals, dams, and buildings. Civil Engineering is the oldest engineering
+                        discipline after military engineering, and it was defined to distinguish non-military
+                        engineering from military engineering.</p>
+                </div>
+                <div class=" sub Auto">
+                    <h2>Electrical Engineering</h2>
+                    <p>Electrical Engineering is one of the fundamental branches of engineering which deals with the
+                        technology of electricity, especially the design & application of circuitry & equipments for
+                        power generation & distribution, machine control & communication.
+                        The department has well
+                        qualified, experienced faculty & well equipped laboratories such as Electrical Machines, Basic
+                        Measurement, Power System, Industrial Electronics lab.</p>
+                </div>
+                <div class="sub Auto">
+                    <h2> Electronics & Telecommunication Engineering</h2>
+                    <p>It is the branch of engineering which deals with current conduction through a vacuum, gas or
+                        semiconductor & communication is the oldest branch of electronics that deals with sending,
+                        receiving & processing of information at long distance by electronic means. Our department is
+                        the one of the best department of college known for well equipped laboratories & classrooms.</p>
+                </div>
+                <div class="sub Auto">
+                    <h2>Mechanical Engineering</h2>
+                    <p>Mechanical engineering is a discipline of engineering that applies the principles of physics and
+                        materials sciences for analysis, design, manufacturing and maintenance of mechanical systems. It
+                        is the branch of engineering that involves the production and usage of heat and mechanical power
+                        for the design, production and operation of machines and tools.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="container faculty" id="faculty">
+            <h1> KARMAYOGI INSTITUTE OF TECHNOLOGY FACULTY DETAILS</h1>
+            <h2>Dr. Sanjay P. Patil</h2>
+            <h4>Principal</h4>
+            <h2>Other Faculty Details</h2>
+            <div class="otherFaculty">
+                <div class="detail">
+                    <h3>Mr. Dipak V. Bhosale</h3>
+                    <h4>Assistant Professor, Department Of Computer Science & Engineering</h4>
+                    <p>Qualification - M.E.</p>
+                    <p>Acadamic Exp- 8 Years</p>
+                </div>
+                <div class="detail">
+                    <h3>Mr. Sarang M. Kulkarni</h3>
+                    <h4>Assistant Professor, Department Of Computer Science & Engineering</h4>
+                    <p>Qualification - M.E.</p>
+                    <p>Acadamic Exp- 11 Years</p>
+                </div>
+                <div class="detail">
+                    <h3>Mr. Uday R. Karvekar</h3>
+                    <h4>Assistant Professor, Department Of Mechanical Engineering</h4>
+                    <p>Qualification - M.E.</p>
+                    <p>Acadamic Exp- 16 Years</p>
+                </div>
+                <div class="detail">
+                    <h3>Mr. Sameer S. Upase</h3>
+                    <h4>Assistant Professor, Department Of Civil Engineering</h4>
+
+                    <p>Qualification - M.E.</p>
+
+                    <p>Acadamic Exp- 12 Years</p>
+                </div>
+                <div class="detail">
+                    <h3>Mr. Sandip J. Savekar</h3>
+                    <h4>Assistant Professor, Department Of Science</h4>
+
+                    <p>Qualification - M.Phil</p>
+
+                    <p>Acadamic Exp- 9 Years</p>
+                </div>
+            </div>
+        </div>
+        <div class="research" id="research">
+            <h1>RESEARCH</h1>
+            <h3>Goal</h3>
+            <p>
+                To develop an integrated R&D environment, that will promote and strengthen the research activities in
+                the institute, to meet the immediate as well as futuristic requirements of the Industry and Society and
+                thus improve the quality of various study programs at Karmayogi Institute of Technology, Pandharpur.
+            </p>
+            <h3>Objectives</h3>
+            <ul>
+                <li>Increase publication activities.</li>
+                <li>Encourage faculty to undertake sponsored and consultancy research projects in order to strengthen
+                    the research profile of CCEW.
+                </li>
+                <li>Maintain external and global relationship with industries / other universities through R & D
+                    activities.
+                </li>
+                <li>R & D cell provides administrative and managerial support for the operation of sponsored research,
+                    consultancy and other R & D related activities.
+                </li>
+                <li>Prepare MoUs between institute and funding agencies</li>
+                <li>Check and Maintain expenditure details / utilization of funds under a funding project.</li>
+                <li>Maintain a centralised repository of research activities data and generate various reports, as and
+                    when needed Encourage students as well as faculty to file patents for their innovative work.</li>
+                <li>Maintain progress reports.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Placement -->
+        <div class="container placement" id="placement">
+            <h1>Placements</h1>
+            <p>Karmayogi College has an independent Training and Placement Cell located in the main
+                building; is committed to provide all possible assistance to its students and also cater to the needs of
+                organizations. It is headed by an Officer Incharge designated as Training & Placement officer and
+                supported by five Placement Coordinators. It ensures the student to secure esteemed positions
+            </p>
+            <h3>Our Top Recruiters</h3>
+            <div class="recruiters">
+                <img src="http://www.karmayogi.org.in/images/Jio.png" alt="image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhKv7SM8lD22coz_lRkbbJMFvbHwRZhrIKbA&usqp=CAU"
+                    alt="img" width="150px" height="120px">
+
+                <img src="http://www.karmayogi.org.in/images/KSPG.png" alt="">
+                <img src="http://www.karmayogi.org.in/images/Bajaj.png" alt="">
+                <img src="http://www.karmayogi.org.in/images/Regen.png" alt="">
+                <img src="data:image/jpeg;base64,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"
+                    alt="">
+            </div>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="contact" id="contact">
+            <h1>Contact Us</h1>
+            <div id="content">
+                <div class="map">
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7600.040468302499!2d75.24043791401671!3d17.74368574729728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc41149d93e92f3%3A0x5cbb9fecd3834e14!2sKarmayogi%20Institute%20of%20Technology!5e0!3m2!1sen!2sus!4v1682927610604!5m2!1sen!2sus"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact-us">
+                    <div class="row">
+                        <div class="contact-col">
+                            <div>
+                                <i class="fa fa-home"></i>
+                                <span>
+                                    <h5>Gat No. 124/125,
+
+                                        A/P: Shelve, Tal: Pandharpur,
+                                    </h5>
+                                    <p>Solapur, Maharashtra, IN</p>
+                                </span>
+                            </div>
+                            <div>
+                                <i class="fa fa-phone"></i>
+                                <span>
+                                    <h5>+91 8554006300</h5>
+                                    <p>Monday to Saturday, 10AM to 6PM</p>
+                                </span>
+                            </div>
+                            <div>
+                                <i class="fa fa-envelope-o"></i>
+                                <span>
+                                    <h5>info@karmayogicollege.ac.in</h5>
+                                    <p>Email us</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="contact-col">
+
+                            <form method="post">
+                                <input type="text" name="name" placeholder="Enter your name" required>
+                                <input type="text" name="email" placeholder="Enter your Email" required>
+                                <input type="text" name="subject" placeholder="Enter your subject name" required>
+                                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                                <button type="submit" class="hero-btn red-btn">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="end">Thanks For Visiting Us</h1>
+    </div>
+</body>
+
+</html>
